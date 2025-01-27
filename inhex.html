@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes"> -->
+    <!-- <meta name="viewport" content="width=1170"> -->
+
+
     <title>Example page</title>
 </head>
 <body>
@@ -26,7 +30,21 @@
             <code> this is code </code>
             <p>and this is cat =D</p>
         </section>
-        <section class="contacts"></section>
+        <section class="contacts">
+            <code>
+                function isValidWalk(walk) { <br>
+                    if (walk.length !== 10) {<br>
+                      return false;<br>
+                    }<br>
+                    const directionCounts = { n: 0, s: 0, e: 0, w: 0 };<br>
+                  
+                    for (const direction of walk) {<br>
+                      directionCounts[direction]++;<br>
+                    }<br>
+                  return directionCounts.n === directionCounts.s && directionCounts.e === directionCounts.w;<br>
+                    }<br>
+            </code>
+        </section>
         <a href="https://steamuserimages-a.akamaihd.net/ugc/2269319015243757481/C30C3DB5C97ACDFB2CA45BF49A79A348C4D3BD36/?imw=512&amp;imh=320&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=true" target="_blank" >
             <img src="cat.jpg" alt="Кликабельное изображение" width="200px">
           </a>
@@ -43,6 +61,9 @@
             <source src="Maxwell_Cat.m4a" type="audio/mp3">
             Ваш браузер не поддерживает элемент аудио.
         </audio>
+        <br>
+        <label for="volume">рейтинг:</label>
+    <input type="range" id="volume" name="volume" min="0" max="100" value="0">
     </main>
     <footer class="footer">
 
