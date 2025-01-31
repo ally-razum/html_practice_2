@@ -3,6 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="сайт о городе Санкт-Петербург">
+    <meta name="keywords" content="питер, санкт-петербург, достопримечательности спб, о питере">
+    <meta name="autor" content="Ally_dev ♥ company">
+
+    <style>
+        .highlight {
+          background-color: #80cbc4;
+          font-weight: bold;
+        }        
+        .centered {
+          text-align: center;
+        }
+      </style>
+      <link rel="icon" type="image/svg+png" href="./emoji-funny-circle-linear.svg">
+      <link rel="stylesheet" href="style.css">
     <title>Сайт о городе</title>
 </head>
 <body>
@@ -16,7 +31,7 @@
      <hr> 
      
      <header>
-        <h1>Добро пожаловать в наш город</h1>
+        <h1 class="highlight">Добро пожаловать в наш город</h1>
         <nav>
             <ul>
                 <li>
@@ -53,6 +68,8 @@
         <section id="places">
             <h2>Достопримечательности</h2>
             <img src="brige.jpg" width="60%" alt="мост через неву">
+            <br>
+            <a href="city_2.html">Подробнее</a>
             <dl>
                 <dt><b>Площадь</b></dt>
                 <dd><i>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste asperiores veniam quis deserunt accusantium minima quae vitae inventore sequi magnam saepe repellat, labore ipsam aliquam similique nostrum nulla rem doloremque?</i></dd>   
@@ -107,7 +124,7 @@
                 </tr>
             </table>
         </section>
-        <section id="map">
+        <section id="map" class="centered">
             <iframe
                 width="700"
                 height="500"             
@@ -115,7 +132,7 @@
                 src="https://yandex.ru/map-widget/v1/?ll=30.314997%2C59.938784&z=11">            
             </iframe>
         </section>
-        <section id="faq">
+        <section id="faq" class="highlight centered">
             <h2>FAQ</h2>
             <details>
                 <summary>Как добраться до исторических мест в городе?</summary>
@@ -138,10 +155,10 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem minima nisi temporibus itaque sapiente nam earum illo odio molestias dolorum asperiores, reiciendis ipsa soluta fugiat veritatis porro nemo dolores enim.</p>
             </details>
         </section>
-     
-        <footer>
-            <section id="contact">
-            <h2>Контакты</h2>
+        <p style="color: blue; font-size: 20px; text-align: center;">Этот текст стилизован с помощью встроенных стилей.</p>
+    <section id="contact">
+        <h2>Контакты</h2>
+            <a href="contact.html">подробнее</a>             
             <form action="post">
                 <label for="name" class="visually-hidden">Имя</label>
                 <input type="text" id="name" placeholder="Имя">
@@ -154,11 +171,14 @@
                 <br>
                 <button type="submit"> Отправить</button>
             </form>
-        </section>
+    </section>
+    
+</main>
+<footer class="footer">
+    <hr>
+    &copy; 2025 ALLY_DEV ♥
 
-        </footer>
-
-     </main>
+</footer>
      
 </body>
 </html>
