@@ -6,40 +6,79 @@
     <title>BEM</title>
 </head>
 <body>
-    <header>
-        <nav class="nav">
-            <b>
-               <ul>
-                    <li><a href="next.html">пример верстка "Прыжок с парашютом"</a></li>
-                    <li><a href="bem.html">БЭМ</a></li>
-                    <li><a href="practice.html">Практика из задания Продвинутый HTML</a></li>
-                </ul>  
-            </b>   
-            <hr>          
-        </nav>
-       
-
-        <img src="cat.jpg" width="30px" alt="logo" class="logo header_logo">
+    <header class="header">
+        <div class="container header_container">        
+        <img class="logo header_logo">
         <nav class="header_navigation">
             <ul class="header_navigation-list">
                 <li class="header_navigation-list-item">
-                    <a href="" class="header_navigation-list-item-link">shop</a>
+                    <a class="header_navigation-list-item-link">shop</a>
                 </li>
                 <li class="header_navigation-list-item">
-                    <a href="" class="header_navigation-list-item-link">about</a>
+                    <a class="header_navigation-list-item-link">about</a>
                 </li>
                 <li class="header_navigation-list-item">
-                    <a href="" class="header_navigation-list-item-link">contact</a>
+                    <a class="header_navigation-list-item-link">contact</a>
                 </li>
                 <li class="header_navigation-list-item">
-                    <a href="" class="header_navigation-list-item-link">home</a>
+                    <a class="header_navigation-list-item-link">home</a>
                 </li>
             </ul>
         </nav>
-
         <nav class="header_buttons">
-
+           <ul class="header_navigation-list">
+            <li class="header_navigation-list-item">
+                <a class="header_navigation-list-item-link">
+                    <img>
+                </a>
+            </li>
+            <li class="header_navigation-list-item">
+                <a class="header_navigation-list-item-link">
+                    <img>
+                </a>
+            </li>
+            <li class="header_navigation-list-item">
+                <a class="header_navigation-list-item-link">
+                    <img>
+                </a>
+            </li>
+           </ul>
         </nav>
+    </div>
     </header>
+    <main class="main">
+        <section class="banner">
+            <div class="container banner_container">
+                <section class="banner_shop-block">
+                    <img class="logo banner_logo">
+                    <p class="banner_description"></p>
+                    <h3 class="banner_title"></h3>
+                    <button class="banner_button banner_shop"></button>
+                </section>
+            </div>
+        </section>
+        <section class="categories">
+            <div class="container categories_container">
+                <ul class="categories_list">
+                    <li class="categories_item">
+                        <article class="categories_card">
+                            <img class="logo_card">
+                        </article>
+                    </li>
+                    <li class="categories_item">
+                        <article class="categories_card">
+                            <img class="logo_card">
+                        </article>
+                    </li>
+                    <li class="categories_item">
+                        <article class="categories_card">
+                            <img class="logo_card">
+                        </article>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+    </main>
 </body>
 </html>
